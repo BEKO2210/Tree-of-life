@@ -3,40 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#050713" />
-  <meta name="description" content="Tree of Life — a cinematic, mobile-safe 2.5D website with a pre-rendered procedural world tree." />
+  <meta name="theme-color" content="#02030a" />
+  <meta name="description" content="Tree of Life — fullscreen animated cinematic world tree." />
   <title>Tree of Life</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="world" id="world" aria-label="Tree of Life cinematic scene">
-    <canvas id="sky" class="layer sky" aria-hidden="true"></canvas>
-    <canvas id="tree" class="layer tree" aria-hidden="true"></canvas>
-    <canvas id="energy" class="layer energy" aria-hidden="true"></canvas>
-
-    <section class="hero">
-      <div class="sigil" aria-hidden="true">✦</div>
-      <p class="eyebrow">Ancient roots · living light · endless branches</p>
-      <h1>Tree of Life</h1>
-      <p class="lead">Ein gigantischer Weltenbaum als vorgerenderte 2D-Illusion: leicht genug fürs Handy, aber mit Tiefe, Licht, Nebel, Sternen, Energieadern und bewegter Kamera wie ein 3D-Shot.</p>
-      <div class="actions">
-        <a href="#vision">Enter the roots</a>
-        <button id="boost" type="button">Awaken</button>
-      </div>
-    </section>
-
-    <section class="panel" id="vision">
-      <p class="kicker">Render trick</p>
-      <h2>Ein 3D-Gefühl ohne 3D-Last.</h2>
-      <p>Der Baum wird beim Laden einmal als großes Canvas-Bild aufgebaut. Danach bewegen sich mehrere 2D-Ebenen mit Parallax, Lichtpuls und Partikeln gegeneinander. Genau deshalb bleibt die Seite auf Mobile ruhig, flüssig und trotzdem episch.</p>
-    </section>
-
-    <div class="hud" aria-hidden="true">
-      <span>ROOT</span><span>TRUNK</span><span>CROWN</span><span>∞</span>
-    </div>
+  <main class="experience" aria-label="Animated Tree of Life">
+    <canvas id="scene" aria-hidden="true"></canvas>
   </main>
   <script src="script.js"></script>
 </body>
